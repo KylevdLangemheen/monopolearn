@@ -18,6 +18,7 @@ class Player:
 
 class Dummytile:
     def __init__(self):
+        self.tilename = "Dummy"
         return
 
 class Board:
@@ -25,3 +26,10 @@ class Board:
         self.tiles = []
         for i in range(40):
             self.tiles.append(Tile(Dummytile()))
+
+class Players:
+    def __init__(self,p1,p2,p3,p4):
+        self.players = [p1,p2,p3,p4]
+
+def doAPoly():
+    return
